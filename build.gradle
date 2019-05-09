@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id "com.github.hierynomus.jython" version "0.6.0"
+}
+
+group 'com.logicmaster63.serversystem'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.python', name: 'jython-standalone', version: '2.7.0'
+    //jython ":flux_led:0.22"
+}
+
+jar {
+    configurations {
+        jar.archiveName = 'serversystem.jar'
+    }
+    manifest {
+        attributes "Main-Class": "com.logicmaster63.serversystem.ServerSystem"
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
