@@ -12,6 +12,7 @@ cache:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
 deploy:
+  name: $project_version
   provider: releases
   api_key:
     secure: EXY5hZBknTwg7fcsaNwEdpKBobtKosUtizhiCJFYNjETpo3XDR7V3sTnGct0UXQkohMnM8FqZvz49tlXqc/iGB+fezwRaP9og9eDJ54rhkCVTKVvcBNdE325J2fi1baXYERnXxTFE9TRgip4/Np9mfpSffhnldz+JqQ9YJtNu7FNMxXPAnHUkAb7oLcRIy6qzB4SClad/pOXNn+WkdIPIfoauu29Ig3HGPVsJIbhrmdp4ZGIPbsO/WMih95w9PDalTlkuGKmn3PXUvXKu5BGLoLMIAEejJdR4r2q1ZZreltSF8neI3M5YG79GRKoPHowy6XQZYAKuBxEYe02kAXVDSnN6sRAsO1hyMkUIaZarR8iVFnxt+rKhAUa+OCtaZRR+ev87hCthqFe1RrQtHligiesFvroLDkOh1vMbLSRTowtegJu0e+pAt3iK/jLUMH+Nq0D7gb+JuHZPlEgTvF5gv+IiBy2KXhjI18gPpU0DlD4dw2n4EIv6Ve7HLtAtEx11nTEJaKieYy7Q2/FP2+6mYdTIt4EE3p5SFoVnH/IPQ6dl0YfdgoNmd7o6n4hzx2ttFHm5dlUEX86JTN5JTRfi1NTL8QYzcY4rSFFAi7M23MOFu+lJBPPhqe1efXfzFDeAzVh4lQICgEXKu0xlbjvrfWwmXmT53yyyQU6501e0KU=
