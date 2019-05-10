@@ -16,7 +16,7 @@ before_deploy:
   - export project_version=$(mvn help:evaluate -N -Dexpression=project.version|grep -v '\[')
   - git config --local user.name "theLogicMaster"
   - git config --local user.email "justinmarentette11@gmail.com"
-  - export TRAVIS_TAG={$project_version}
+  - export TRAVIS_TAG=release-$project_version
   - git tag $TRAVIS_TAG
 deploy:
   provider: releases
