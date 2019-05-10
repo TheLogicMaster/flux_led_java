@@ -20,4 +20,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: TheLogicMaster/flux_led_java
-  name: $project_version
