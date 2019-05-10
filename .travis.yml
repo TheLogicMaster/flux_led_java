@@ -14,7 +14,7 @@ cache:
 before_deploy:
   - git config --local user.name "theLogicMaster"
   - git config --local user.email "justinmarentette11@gmail.com"
-  - export TRAVIS_TAG=$project_version
+  - export TRAVIS_TAG={$project_version}
   - git tag $TRAVIS_TAG
 deploy:
   provider: releases
